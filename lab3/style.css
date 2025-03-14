@@ -2,6 +2,7 @@
     --bg-color:#fff4e7;
     --bg-color-header-name:#74330B;
     --bg-color-bold:#f2d1bd;
+    --bg-color-low-brown:#a55828;
 }
 *{
     margin: 0;
@@ -21,9 +22,43 @@ header{
     margin-bottom: 30px;
     border-bottom: 3px solid var(--bg-color-header-name);
 }
+header h1{
+    padding: 10px;
+}
 header img{
     height:50px;
-    border-radius: 5px;
+    border-radius: 50%;
+}
+article{
+    display: flex;
+    margin: 15px;
+    box-sizing: border-box;
+}
+article img{
+    max-width: 400px;
+    border:0.1rem solid var(--bg-color-header-name);
+    border-radius: 3px;
+}
+.time{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.classdiagram{
+    text-align: center;
+}
+.hpara{
+    margin-top: 5px;
+}
+.key{
+    color: var(--bg-color-low-brown);
+    font-style: italic;
+    margin-top: 5px;
+}
+.list{
+    margin-left:30px;
+}
+.sitalic{
+    font-style: italic;
 }
 #card{
     margin:15px 15px 15px 450px;
@@ -34,6 +69,7 @@ header img{
     box-sizing: border-box;
     border:2px solid var(--bg-color-header-name);
     box-shadow: 2px 2px 2px var(--bg-color-header-name);
+    border-radius: 3px;
 }
 #cardi h1{
     font-size: 0.7rem;
@@ -45,17 +81,22 @@ header img{
 .cardData p{
     padding-left: 10px;
 }
-span{
-    padding-left: 10px;
+.followersno{
     color:green;
 }
 .cardimg{
     height:50%;
     margin: 15px;
     border-radius: 50%;
+    box-shadow: 2px 2px 2px var(--bg-color-header-name);
+}
+#followers{
+    display: flex;
 }
 /*footer*/
 footer{
+    border-top
+    : 3px solid var(--bg-color-header-name);
     background-color: var(--bg-color-bold);
     text-align: center;
     padding: 15px;
