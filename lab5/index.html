@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="container">
+        <header>
+            <img src="logo.png" alt="Hamad logo">
+            <h1>Hamad</h1>
+        </header>
+        <nav class="navbar">
+            <ul class="navlist">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section>
+            <section id="card1" class="card">
+                <div id="cardData1" class="cardData">
+                    <h1>Bio:</h1>
+                    <p>A driven and detail-oriented professional passionate about crafting user-centric solutions through collaborative innovation and technical excellence.</p>
+                    <h1 style="display:inline-block;">Followers:</h1>
+                    <span class="followersno" id="followersno1">3</span>
+                </div>
+                <div id="cardi1">
+                    <img class="cardimg" id="cardimg1" src="img.jpg" alt="picture">
+                    <h1>Muhammad Hamad</h1>
+                </div>
+            </section>
+            <section id="card2" class="card">
+                <div id="cardi2">
+                    <img class="cardimg" id="cardimg2" src="img.jpg" alt="picture">
+                    <h1>Muhammad Hamad</h1>
+                </div>
+                <div id="cardData2" class="cardData">
+                    <h1>Bio:</h1>
+                    <p>A driven and detail-oriented professional passionate about crafting user-centric solutions through collaborative innovation and technical excellence.</p>
+                    <h1 style="display:inline-block;">Followers:</h1>
+                    <span class="followersno" id="followersno2">3</span>
+                </div>
+            </section>
+        </section>
+        <main>
+            <article>
+                <div id="classdiagramimg">
+                    <img src="classdiagram.png" alt="Class Diagram">
+                    <h1 class="classdiagram" id="classdiagram">Class Diagram</h1>
+                </div>
+                <div id="paragraph">
+                    <p id="time" class="time">Posted on:<time datetime="2025-3-14">March 14</time></p>
+                    <h1 class="hpara">Class Structure and Inheritance</h1>
+                    <p class="para"><span class="sitalic">The UML class diagram: </span>centers on a User class with attributes like username, password, and role, serving as the base for specialized roles. Student and Staff inherit from User, ensuring shared properties while defining role-specific behaviors. Students gain methods like submitQuestion() and vote(), while Staff use answerQuestion() to provide solutions. This hierarchy promotes code reuse and clear separation of responsibilities.</p>
+                    <h1 class="key">Key Points</h1>
+                    <ul class="list">
+                        <li>Inheritance hierarchy: User → Student/Staff.</li>
+                        <li>Role-specific methods (e.g., voting for Students, answering for Staff).</li>
+                        <li>Centralized authentication via shared User attributes.</li>
+                    </ul>
+                    <h1 class="hpara">Associations and Data Flow</h1>
+                    <p class="para">The Question class acts as a hub, linked to a Student (submitter), Module (course context), and Answer (Staff response). Each Question aggregates Vote objects to track engagement and includes validation logic (checkProfanity()). The Module class ties questions to academic courses, while Vote and Answer classes ensure traceability with timestamps.</p>
+                    <h1 class="key">Key Points</h1>
+                    <ul class="list">
+                        <li>Question associates with Student, Module, Answer, and Vote.</li>
+                        <li>Vote tracks voter identity and timestamp for auditing.</li>
+                        <li>Module groups questions by course (e.g., code, tutor).</li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+        <footer>
+            copyright &copy;2025 Muhammad Hamad
+        </footer>
+    </section>
+    
+</body>
+</html>
