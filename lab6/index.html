@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamad</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[fff4e7] font-sans leading-[1.3]">
+  <section id="container" class="grid">
+    <header class="flex mb-[5px] bg-[#f2d1bd] p-[5px] rounded-[5px] border-[2px] border-[#74330B]">
+      <img src="logo.png" alt="Hamad logo" class="h-[50px] rounded-full">
+      <h1 class="text-[#74330B] p-[10px] font-bold text-2xl">Hamad</h1>
+    </header>
+    <nav class="mb-[30px] flex justify-around items-center bg-[#f2d1bd] p-[15px] rounded-[5px] border-[2px] border-[#74330B]">
+      <ul class="list-none flex justify-center items-center">
+        <li class="mx-[10px]"><a href="#home" class="no-underline text-[#74330B] font-bold p-[10px] bg-red-100 rounded-[5px] shadow-[2px_2px_2px_#74330B] hover:bg-[#74330B] hover:text-[#f2d1bd]">Home</a></li>
+        <li class="mx-[10px]"><a href="#about" class="no-underline text-[#74330B] font-bold p-[10px] bg-red-100 rounded-[5px] shadow-[2px_2px_2px_#74330B] hover:bg-[#74330B] hover:text-[#f2d1bd]">About</a></li>
+        <li class="mx-[10px]"><a href="#projects" class="no-underline text-[#74330B] font-bold p-[10px] bg-red-100 rounded-[5px] shadow-[2px_2px_2px_#74330B] hover:bg-[#74330B] hover:text-[#f2d1bd]">Projects</a></li>
+        <li class="mx-[10px]"><a href="#contact" class="no-underline text-[#74330B] font-bold p-[10px] bg-red-100 rounded-[5px] shadow-[2px_2px_2px_#74330B] hover:bg-[#74330B] hover:text-[#f2d1bd]">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="flex flex-row gap-[100px] p-[50px_250px_50px_250px] sm:flex-col md:flex-col lg:flex-row md:gap-4 md:p-4 sm:gap-4 sm:p-4 justify-center items-center">
+      <section id="card1" class="bg-[#f2d1bd] h-[200px] w-[350px] flex box-border border-[2px] border-[#74330B] shadow-[2px_2px_2px_#74330B] rounded-[3px]">
+        <div id="cardData1" class="pl-[10px]">
+          <h1 class="text-[#74330B] p-[10px_10px_10px_0] font-bold">Bio:</h1>
+          <p>A driven and detail-oriented professional passionate about crafting user-centric solutions through collaborative innovation and technical excellence.</p>
+          <h1 class="text-[#74330B] inline-block font-bold">Followers:</h1>
+          <span class="text-green-600" id="followersno1">3</span>
+        </div>
+        <div id="cardi1">
+          <img class="h-1/2 m-[15px] rounded-full shadow-[2px_2px_2px_var(#74330B)]" id="cardimg1" src="img.jpg" alt="picture">
+          <h1 class="text-[#74330B] text-[1.1rem] font-bold text-center">Muhammad Hamad</h1>
+        </div>
+      </section>
+      <section id="card2" class="grid-in-card bg-[#f2d1bd] h-[200px] w-[350px] flex box-border border-[2px] border-[#74330B] shadow-[2px_2px_2px_#74330B] rounded-[3px]">
+        <div id="cardi2">
+          <img class="cardimg h-1/2 m-[15px] rounded-full shadow-[2px_2px_2px_#74330B]" id="cardimg2" src="img.jpg" alt="picture">
+          <h1 class="text-[#74330B] text-[1.1rem] font-bold text-center">Muhammad Hamad</h1>
+        </div>
+        <div id="cardData2" class="pl-[10px]">
+          <h1 class="text-[#74330B] p-[10px_10px_10px_0] font-bold">Bio:</h1>
+          <p>A driven and detail-oriented professional passionate about crafting user-centric solutions through collaborative innovation and technical excellence.</p>
+          <h1 class="text-[#74330B] inline-block font-bold">Followers:</h1>
+          <span class="text-green-600" id="followersno2">3</span>
+        </div>
+      </section>
+    </section>
+    <main class="flex flex-row">
+      <article class="m-[15px] box-border flex flex-col sm:flex-col md:flex-col lg:flex-row-reverse ">
+        <div id="classdiagramimg" class="ml-[40px] sm:m-[20px_250px_10px_240px] md:m-[20px_250px_10px_240px] lg:m-[0] justify-center items-center">
+          <img src="classdiagram.png" alt="Class Diagram" class="max-w-[300px] border-[0.1rem] border-[#74330B] rounded-[3px]">
+          <h1 class="classdiagram text-center text-[#74330B] font-bold text-2xl">Class Diagram</h1>
+        </div>
+        <div id="paragraph" class="flex flex-col">
+          <p id="time" class="italic mb-[10px]">Posted on:<time datetime="2025-3-14">March 14</time></p>
+          <h1 class="hpara text-[#74330B] mt-[5px] font-bold text-2xl">Class Structure and Inheritance</h1>
+          <p class="para"><span class="italic">The UML class diagram: </span>centers on a User class with attributes like username, password, and role, serving as the base for specialized roles. Student and Staff inherit from User, ensuring shared properties while defining role-specific behaviors. Students gain methods like submitQuestion() and vote(), while Staff use answerQuestion() to provide solutions. This hierarchy promotes code reuse and clear separation of responsibilities.</p>
+          <h1 class="key text-[#a55828] italic mt-[5px] font-bold text-2xl">Key Points</h1>
+          <ul class="list ml-[30px] list-disc">
+            <li>Inheritance hierarchy: User → Student/Staff.</li>
+            <li>Role-specific methods (e.g., voting for Students, answering for Staff).</li>
+            <li>Centralized authentication via shared User attributes.</li>
+          </ul>
+          <h1 class="hpara text-[#74330B] mt-[5px] font-bold text-2xl">Associations and Data Flow</h1>
+          <p class="para">The Question class acts as a hub, linked to a Student (submitter), Module (course context), and Answer (Staff response). Each Question aggregates Vote objects to track engagement and includes validation logic (checkProfanity()). The Module class ties questions to academic courses, while Vote and Answer classes ensure traceability with timestamps.</p>
+          <h1 class="key text-[#a55828] italic mt-[5px] font-bold text-2xl">Key Points</h1>
+          <ul class="list ml-[30px] list-disc">
+            <li>Question associates with Student, Module, Answer, and Vote.</li>
+            <li>Vote tracks voter identity and timestamp for auditing.</li>
+            <li>Module groups questions by course (e.g., code, tutor).</li>
+          </ul>
+        </div>
+      </article>
+    </main>
+    <footer class="grid-in-footer border-t-[3px] border-[#74330B] bg-[#f2d1bd] text-center p-[15px]">
+      copyright &copy;2025 Muhammad Hamad
+    </footer>
+  </section>
+</body>
+</html>
